@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- nginx-deployment.yaml
+- nginx-service.yaml
+
+commonLabels:
+  env: stage
+
+nameSuffix: -stage
+
+images:
+  - name: nginx
+    newName: nginx-stage
+    newTag: alpine             # if we want to update image with tag or also we can mention only instead of image

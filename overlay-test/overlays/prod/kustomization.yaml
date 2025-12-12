@@ -1,0 +1,6 @@
+resources:
+  - ../../base
+  - grafana.yaml
+
+patchesStrategicMerge:
+  - configmap-db-prod.yaml

@@ -1,0 +1,6 @@
+resources:
+  - web/deployment.yaml
+  - web/service.yaml
+  - db/mysql-deploy.yaml
+  - db/mysql-service.yaml
+  - configmap-db.yaml
